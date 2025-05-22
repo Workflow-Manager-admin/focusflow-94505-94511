@@ -65,14 +65,17 @@
 /* Session mode colors */
 .timer-container.work {
   border-left: 4px solid var(--kavia-orange);
+  box-shadow: 0 8px 16px rgba(232, 122, 65, 0.15);
 }
 
 .timer-container.shortBreak {
   border-left: 4px solid #4CAF50;
+  box-shadow: 0 8px 16px rgba(76, 175, 80, 0.15);
 }
 
 .timer-container.longBreak {
   border-left: 4px solid #2196F3;
+  box-shadow: 0 8px 16px rgba(33, 150, 243, 0.15);
 }
 
 .mode-indicator-work {
@@ -85,6 +88,45 @@
 
 .mode-indicator-longBreak {
   color: #2196F3;
+}
+
+/* Session banner */
+.session-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.session-banner.work {
+  background-color: rgba(232, 122, 65, 0.2);
+  color: var(--kavia-orange);
+  border-bottom: 2px solid var(--kavia-orange);
+}
+
+.session-banner.shortBreak {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.session-banner.longBreak {
+  background-color: rgba(33, 150, 243, 0.2);
+  color: #2196F3;
+  border-bottom: 2px solid #2196F3;
+}
+
+/* Adjust timer mode position to account for banner */
+.timer-mode {
+  margin-top: 2rem;
 }
 
 /* Button with icon styles */
