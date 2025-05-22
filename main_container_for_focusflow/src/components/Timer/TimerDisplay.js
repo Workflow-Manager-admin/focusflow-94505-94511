@@ -9,7 +9,6 @@ const TimerDisplay = () => {
   const { 
     timeRemaining, 
     mode, 
-    currentSession, 
     completedSessions, 
     sessionsBeforeLongBreak 
   } = useFocusFlow();
