@@ -24,11 +24,11 @@ const TimerDisplay = () => {
   const getModeText = () => {
     switch (mode) {
       case 'work':
-        return <span className="mode-indicator-work">Focus Session</span>;
+        return <span className="mode-indicator-work">Stay Focused</span>;
       case 'shortBreak':
-        return <span className="mode-indicator-shortBreak">Short Break</span>;
+        return <span className="mode-indicator-shortBreak">Take a Short Break</span>;
       case 'longBreak':
-        return <span className="mode-indicator-longBreak">Long Break</span>;
+        return <span className="mode-indicator-longBreak">Enjoy Your Long Break</span>;
       default:
         return <span>Unknown Mode</span>;
     }
