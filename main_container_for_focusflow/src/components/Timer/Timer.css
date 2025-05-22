@@ -38,8 +38,19 @@
 
 .timer-controls {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 1.5rem;
+}
+
+/* Add animations for mode transitions */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.timer-container {
+  animation: pulse 1s ease-in-out;
 }
 
 .session-info {
