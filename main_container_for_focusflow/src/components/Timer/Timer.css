@@ -14,11 +14,17 @@
 }
 
 .timer-display {
-  font-size: 6rem;
+  font-size: 6.5rem;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   font-variant-numeric: tabular-nums;
   letter-spacing: -2px;
+  transition: all 0.3s ease;
+}
+
+.timer-container:hover .timer-display {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .timer-mode {
@@ -27,7 +33,7 @@
   margin-bottom: 1.5rem;
   color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .timer-controls {
