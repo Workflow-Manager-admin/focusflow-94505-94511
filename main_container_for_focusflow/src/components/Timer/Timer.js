@@ -11,8 +11,24 @@ import './Timer.css';
 const Timer = () => {
   const { mode } = useFocusFlow();
   
+  const getSessionBannerText = () => {
+    switch (mode) {
+      case 'work':
+        return 'Focus Session';
+      case 'shortBreak':
+        return 'Short Break';
+      case 'longBreak':
+        return 'Long Break';
+      default:
+        return 'Unknown Mode';
+    }
+  };
+  
   return (
     <div className={`timer-container ${mode}`}>
+      <div className={`session-banner ${mode}`}>
+        {getSessionBannerText()}
+      </div>
       <TimerDisplay />
       <TimerControls />
     </div>
